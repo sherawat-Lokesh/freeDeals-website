@@ -1,0 +1,11 @@
+img {
+  width: 26rem;
+  height: 15rem;
+}
+.heading {
+  color: black;
+  text-decoration: none;
+  outline: none;
+  font-size: larger;
+  font-weight: bolder;
+}

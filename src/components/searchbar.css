@@ -1,0 +1,8 @@
+input {
+  border: none;
+  outline: none;
+}
+.search-icon{
+    padding-top: 1px;
+    padding-left: 3px;
+}
