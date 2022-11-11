@@ -7,7 +7,7 @@ const Cards = ({ data: cardComponent }) => {
   return (
     <div className="flex mt4  ">
       <div>
-        <div className="cards near-black { color: #111111 }bg-white { background-color: #FFFFFF } pv3  mr4 ml5 br3 shadow-4 ">
+        <div className="cards near-black { color: #111111 }bg-white { background-color: #FFFFFF } pv3  mr4 ml5  shadow-4 ">
           {cardComponent.forEach((element) => {})}
           <span className="flex ">
             <img
@@ -16,10 +16,10 @@ const Cards = ({ data: cardComponent }) => {
             ></img>
             <div>
               <h4 className=" ml4 mr2 light-purple">KBC QUIZ ANSWER</h4>
-              <a className="heading ml4 mr2" href="#">
-                KBC Pari Match Quiz Answers Today 10th Novembe r : Play & Win
+              <h3 className="heading ml4 mr2 ">
+                KBC Pari Match Quiz Answers Today 10th November : Play & Win
                 Extra Points Daily
-              </a>
+              </h3>
               <h5 className="description ml4 mr2 ">
                 KBC Pari Match Quiz Answers Today 10th November: Play the KBC
                 pari match news quiz daily and collect extra points every day.
@@ -32,7 +32,7 @@ const Cards = ({ data: cardComponent }) => {
         </div>
       </div>
 
-      <div className="pa3 mr5 br3 shadow-4   near-black { color: #111111 }bg-white { background-color: #FFFFFF } ">
+      <div className="pa3 mr5  shadow-4   near-black { color: #111111 }bg-white { background-color: #FFFFFF } ">
         <img src="https://paisawasooldeal.in/wp-content/uploads/2022/09/KBC-Pari-Match-Quiz-Answers-Today.webp"></img>
       </div>
     </div>
