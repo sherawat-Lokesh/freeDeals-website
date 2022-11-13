@@ -1,6 +1,7 @@
 img {
   width: 26rem;
   height: 15rem;
+  opacity: 1;
 }
 .heading {
   color: black;
@@ -8,4 +9,13 @@ img {
   outline: none;
   font-size: larger;
   font-weight: bolder;
+  cursor: pointer;
+}
+
+.right-section {
+  width: 35rem;
+}
+
+img:hover {
+  opacity: 0.85;
 }

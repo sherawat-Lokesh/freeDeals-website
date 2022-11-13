@@ -13,8 +13,8 @@ const SearchBar = () => {
 
       <SearchIcon
         className="search-icon h2 br bb hover-black"
+        style={{ fill: "red" }}
         sx={{ fontSize: 40 }}
-        color="action"
       />
     </div>
   );

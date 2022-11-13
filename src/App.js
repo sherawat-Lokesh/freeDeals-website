@@ -25,7 +25,7 @@ function App() {
         <SearchBar />
       </div>
       <div>
-        <Cards data={cards} />
+        <Cards carddata={cards} />
       </div>
     </div>
   );
