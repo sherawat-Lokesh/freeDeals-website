@@ -8,3 +8,8 @@ input {
   padding-left: 10px;
   padding-right: 5px;
 }
+.search-input::placeholder{
+  color: black;
+  font-weight: bold;
+
+}

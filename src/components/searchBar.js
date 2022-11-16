@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <div className="flex">
       <input
-        className="w-100   br bb fw4"
+        className="search-input w-100   br bb fw4"
         type={"text"}
         placeholder="Search here..."
       ></input>

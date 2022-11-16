@@ -13,19 +13,18 @@ function App() {
       .then((card) => {
         setCards(card);
       });
-    console.log("a");
   }, []);
 
   return (
     <div>
-      <div className="navbar">
+      <div key="navbar" className="navbar">
         <Navbar />
       </div>
-      <div className="search-box">
+      <div key="search-box" className="search-box">
         <SearchBar />
       </div>
       <div>
-        <Cards carddata={cards} />
+        <Cards key="cards" carddata={cards} />
       </div>
     </div>
   );
