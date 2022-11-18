@@ -3,7 +3,7 @@ import aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
-const LeftCard = ({ cardData: cardComponent }) => {
+const LeftCard = ({ cardData: cardComponent, getFileName }) => {
   //transition type
   const fadeUp = "fade-up";
 
@@ -33,6 +33,8 @@ const LeftCard = ({ cardData: cardComponent }) => {
                     className="heading ml4 mr2  "
                     onClick={(e) => {
                       e.preventDefault();
+                      if (element?.filename === null) return;
+                      getFileName(element.filename);
                     }}
                   >
                     <Link className="no-underline black" to="/article">

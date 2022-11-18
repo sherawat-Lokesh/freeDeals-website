@@ -12,7 +12,8 @@ function App() {
       .then((res) => res.json())
       .then((card) => {
         setCards(card);
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -21,7 +22,7 @@ function App() {
         <Navbar />
       </div>
       <div key="search-box" className="search-box">
-        <SearchBar />
+        <SearchBar carddata={cards} />
       </div>
       <div>
         <Cards key="cards" carddata={cards} />
