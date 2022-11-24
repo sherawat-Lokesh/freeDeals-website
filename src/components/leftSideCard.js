@@ -14,6 +14,7 @@ const LeftCard = ({ cardData: cardComponent, getFileName }) => {
   return (
     <div>
       {cardComponent
+        .sort((a, b) => (a.id > b.id ? 1 : b.id > a.id ? -1 : 0))
         .map((element, i) => {
           return (
             <div

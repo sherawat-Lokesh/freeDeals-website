@@ -1,6 +1,6 @@
 const RightCard = ({ cardData: cardComponent }) => {
   //sorting out component which have topicName='FREE KA MAAL'
-  const freekamaal = cardComponent.filter(myFuntion).reverse();
+  const freekamaal = cardComponent.filter(myFuntion).reverse()
   function myFuntion(values) {
     return values.topicname === "FREE KA MAAL";
   }
@@ -9,7 +9,7 @@ const RightCard = ({ cardData: cardComponent }) => {
       <div className="pa3 mr5 mt3 shadow-4 ba b--light-gray  near-black { color: #111111 }bg-white { background-color: #FFFFFF } ">
         <img
           alt="amitab bachan"
-          src="https://paisawasooldeal.in/wp-content/uploads/2022/11/KBC-Quiz-Answers-Today.webp"
+          src="https://paisawasooldeal.in/wp-content/uploads/2022/09/Cadbury-PlayPad-Paytm-Cashback.webp"
         ></img>
       </div>
       {/* free ka maal sectio RIGHT SIDE */}
@@ -39,7 +39,6 @@ const RightCard = ({ cardData: cardComponent }) => {
                   </div>
                 );
               }
-
             })}
           </div>
         </div>
