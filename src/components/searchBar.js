@@ -1,35 +1,34 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "tachyons";
 import SearchIcon from "@mui/icons-material/Search";
+import "tachyons";
 import "./searchbar.css";
-import { useState } from "react";
+import {  useNavigate } from "react-router-dom";
 
-const SearchBar = ({ carddata }) => {
-  const [result, setResult] = useState([]);
-  function searchResult(e) {
+
+const SearchBar = ({ carddata,onChangeSet}) => {
+  
+  const navigate=useNavigate();
+  let arr = [];
+  
+function searchResult(e) {    
     if (e.key === "Enter") {
-      carddata.filter((result) => {
-        if (`${result.heading}`.toLowerCase().match(e.target.value)) {
-          console.log(result);
-        }
-      });
+      if (e.target.value === "") return;
+          arr = [];
+          if(window.location.pathname!=='/SearchResult') navigate('/SearchResult')
+            carddata.filter((result) => {
+              if (`${result.heading}`.toLowerCase().match(e.target.value)) {
+                  arr.push(result);
+                    onChangeSet([...arr])
+                }   
+            });
     }
   }
 
+
+
   return (
     <div className="flex">
-      <input
-        onKeyDown={searchResult}
-        className="search-input w-100   br bb fw4"
-        type={"text"}
-        placeholder="Search here..."
-      ></input>
-
-      <SearchIcon
-        className="search-icon h2 br bb hover-black"
-        style={{ fill: "red" }}
-        sx={{ fontSize: 40 }}
-      />
+      <input onKeyDown={searchResult} className="search-input w-100   br bb fw4" type="text" placeholder="Search here..." ></input>
+        <SearchIcon className="search-icon h2 br bb hover-black" style={{ fill: "red" }} sx={{ fontSize: 40 }} />
     </div>
   );
 };
