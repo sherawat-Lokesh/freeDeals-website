@@ -22,7 +22,9 @@ return (
                       </div>
                           {/* free ka maal items list start from here */}
                           <div>
-                            {freekamaal.map((values, i) => {
+                            
+                            {// eslint-disable-next-line
+                            freekamaal.map((values, i) => {
                               if (i <= 5) {
                                 return (
                                   <div key={i} className="hover-moon-gray mt2 flex bb  b--light-gray ">

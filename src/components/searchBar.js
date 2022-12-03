@@ -14,6 +14,7 @@ function searchResult(e) {
       if (e.target.value === "") return;
           arr = [];
           if(window.location.pathname!=='/SearchResult') navigate('/SearchResult')
+            // eslint-disable-next-line
             carddata.filter((result) => {
               if (`${result.heading}`.toLowerCase().match(e.target.value)) {
                   arr.push(result);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./cardArticle.css";
+
 //prettier-ignore
 const CardArticle = ({cardData: cardComponent,articleFileName:filename}) => {
   const [Data, setdata] = useState(null);
