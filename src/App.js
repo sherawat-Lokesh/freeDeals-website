@@ -12,7 +12,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:8000/",{method:"get"})
+    fetch("https://deals4free-backend.onrender.com/",{method:"get"})
       .then((res) => res.json())
         .then((card) => {
           setCards(card);}

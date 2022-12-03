@@ -6,13 +6,13 @@ const CardArticle = ({cardData: cardComponent,articleFileName:filename}) => {
   const [Data, setdata] = useState(null);
 
 useEffect(() => {
-  fetch("http://localhost:8000/article", {
+  fetch("https://deals4free-backend.onrender.com/article", {
     method: "post",
       headers: { "content-Type": "application/json" },
         body: JSON.stringify({ fileName: filename }),
       }).then((res) => res.text())
           .then((data) => setdata(data))
-            .catch((err) => console.log(err));
+            .catch((err) => console.log('File not found'));
   });
 
 if (Data === null) return;
