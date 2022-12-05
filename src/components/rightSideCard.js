@@ -5,7 +5,7 @@ const RightCard = ({ cardData: cardComponent }) => {
     const freekamaal = cardComponent.filter(myFuntion).reverse()
 
 function myFuntion(values) {
-    return values.topicname === "FREE KA MAAL";
+    return (`${values.topicname}`.toUpperCase()) === "FREE KA MAAL";
 }
 
 return (
