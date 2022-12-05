@@ -1,2 +1,2 @@
-##html,css(tachyons),js,reactjs,nodejs,postgres
-----link------->https://deals4free.netlify.app/
+REACT-JS,NODE-JS,POSTGRES,JAVASRIPT,
+-----------link----------->https://deals4free.netlify.app/
