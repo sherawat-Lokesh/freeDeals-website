@@ -6,7 +6,7 @@ const CardArticle = ({cardData: cardComponent,articleFileName:filename}) => {
   const [Data, setdata] = useState(null);
 
 useEffect(() => {
-  fetch("https://deals4free-backend.onrender.com/article", {
+  fetch("https://plain-cow-top-coat.cyclic.app/article", {
     method: "post",
       headers: { "content-Type": "application/json" },
         body: JSON.stringify({ fileName: filename }),
