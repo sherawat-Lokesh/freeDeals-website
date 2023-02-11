@@ -5,14 +5,19 @@ import "./cardArticle.css";
 const CardArticle = ({cardData: cardComponent,articleFileName:filename}) => {
   const [Data, setdata] = useState(null);
 
+if(filename !==null){
+  localStorage.setItem('load',`${filename}`)
+}
+
 useEffect(() => {
+
   fetch("https://plain-cow-top-coat.cyclic.app/article", {
     method: "post",
       headers: { "content-Type": "application/json" },
-        body: JSON.stringify({ fileName: filename }),
+        body: JSON.stringify({ fileName: localStorage.getItem('load') }),
       }).then((res) => res.text())
           .then((data) => setdata(data))
-            .catch((err) => console.log('File not found'));
+            .catch((err) => console.error('File not found'));
   });
 
 if (Data === null) return;
