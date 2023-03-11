@@ -24,7 +24,7 @@ return (
                           <div>
                             
                             {// eslint-disable-next-line
-                            freekamaal.map((values, i) => {
+                            freekamaal.reverse().map((values, i) => {
                               if (i <= 5) {
                                 return (
                                   <div key={i} className="hover-moon-gray mt2 flex bb  b--light-gray ">
