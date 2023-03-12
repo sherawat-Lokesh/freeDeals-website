@@ -25,7 +25,7 @@ return (
                             
                             {// eslint-disable-next-line
                             freekamaal.reverse().map((values, i) => {
-                              if (i <= 5) {
+                              if (i < 5) {
                                 return (
                                   <div key={i} className="hover-moon-gray mt2 flex bb  b--light-gray ">
                                     <img className="w3 h3 br2" src={values.image} alt={values.topicname}></img>
